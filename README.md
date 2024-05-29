@@ -13,7 +13,7 @@ Obtain the following data from Restricting Data Hub
 
 [State House District data](https://redistrictingdatahub.org/dataset/2021-virginia-house-of-delegates-districts-approved-plan/): 2021 State House Approved Plan
 
-[State Senate District data](hthttps://redistrictingdatahub.org/dataset/2021-senate-of-virginia-districts-approved-plan/): 2021 State Senate Approved Plan
+[State Senate District data](https://redistrictingdatahub.org/dataset/2021-senate-of-virginia-districts-approved-plan/): 2021 State Senate Approved Plan
 
 [2021 election data](https://redistrictingdatahub.org/dataset/vest-2021-virginia-precinct-boundaries-and-election-results-shapefile/)**:**  VEST 2021 virginia precinct and election results
 
