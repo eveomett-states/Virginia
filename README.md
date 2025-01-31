@@ -1,9 +1,14 @@
-# virginia Election Shapefile
+# License
+This data was generated using data from the Redistricting Data Hub.  Any use of this project shall also comply with restrictions on use of data and attribution requirements set forth in the Redistricting Data Hub terms and conditions found at: [https://redistrictingdatahub.org/terms-and-conditions/](https://redistrictingdatahub.org/terms-and-conditions/).
 
-This shapefile was processed by Professor Ellen Veomett and her student Ananya Agarwal.
+Use of this project is further governed by the terms of the [Creative Commons Attribution Noncommercial 4.0 International](https://creativecommons.org/licenses/by-nc/4.0/legalcode.en)
+
+# Virginia Json and Shapefile
+
+This json and shapeifle were created by Professor Ellen Veomett and her student Ananya Agarwal using the corresponding jupyter notebook.
 
 # **Sources**
-@author: eveomett AI for Redistricting, USF All data retrieved 04/30/24:
+All data retrieved 04/30/24:
 
 Obtain the following data from Restricting Data Hub
 
@@ -26,63 +31,69 @@ Obtain the following data from Restricting Data Hub
 [2016 election data](https://redistrictingdatahub.org/dataset/vest-2016-virginia-precinct-and-election-results/)**:**  VEST 2016 virginia precinct and election results
 
 ## Processing
-Demographic data were aggregated from the block level to precincts using [MGGG’s proration software](https://github.com/mggg/maup). Congressional, house, and senate district IDs were assigned to precincts also using this package.
+Data were cleaned and aggregated in the corresponding jupyter notebook using MGGG’s python library [maup](https://github.com/mggg/maup).  
 
 ## Metadata
-* `precinct`: Precinct name
-* `locality`: Locality name
-* `loc_prec`: Locality and precinct names
-* `district`: Congressional district name
-* `G18DHOR`: Number of votes for 2018 Democratic US House candidate
-* `G18DSEN`: Number of votes for 2018 Democratic senate candidate
-* `G18OSEN`: Number of votes for 2018 other senate candidates
-* `G18RHOR`:  Number of votes for 2018 Republican US House candidate
-* `G18RSEN`: Number of votes for 2018 Republican senate candidate
-* `G17DGOV`: Number of votes for 2017 Democratic gubernatorial candidate
-* `G17DLTG`: Number of votes for 2017 Democratic lieutenant governor candidate
-* `G17DATG`: Number of votes for 2017 Republican attorney general candidate
-* `G17DHOD`: Number of votes for 2017 Democratic House of Delegates candidate
-* `G17RGOV`: Number of votes for 2017 Republican gubernatorial candidate
-* `G17RLTG`: Number of votes for 2017 Republican lieutenant governor candidate
-* `G17RATG`: Number of votes for 2017 Republican attorney general candidate
-* `G17RHOD`: Number of votes for 2017 Republican House of Delegates candidate
-* `G17OGOV`:  Number of votes for 2017 other gubernatorial candidates
-* `G16DPRS`: Number of votes for 2016 Democratic presidential candidate
-* `G16RPRS`: Number of votes for 2016 Republican presidential candidate
-* `G16OPRS`: Number of votes for 2016 other presidential candidates
-* `G16DHOR`: Number of votes for 2016 Democratic US House candidate
-* `G16RHOR`: Number of votes for 2016 Republican US House candidate
-* `G16OHOR`: Number of votes for 2016 other US House candidates
-* `TOTPOP`: Total population 
-* `NH_WHITE`: White, non-hispanic, population
-* `NH_BLACK`: Black, non-hispanic, population
-* `NH_AMIN`: American Indian and Alaska Native, non-hispanic, population
-* `NH_ASIAN`: Asian, non-hispanic, population
-* `NH_NHPI`: Native Hawaiian and Pacific Islander, non-hispanic, population
-* `NH_OTHER`: Other race, non-hispanic, population
-* `NH_2MORE`: Two or more races, non-hispanic, population
-* `HISP`: Hispanic population
-* `H_WHITE`: White, hispanic, population
-* `H_BLACK`: Black, hispanic, population
-* `H_AMIN`: American Indian and Alaska Native, hispanic, population
-* `H_ASIAN`: Asian, hispanic, population
-* `H_NHPI`: Native Hawaiian and Pacific Islander, hispanic, population
-* `H_OTHER`: Other race, hispanic, population
-* `H_2MORE`: Two or more races, hispanic, population
-* `VAP`: Total voting age population
-* `HVAP`: Hispanic voting age population
-* `WVAP`: White, non-hispanic, voting age population
-* `BVAP`: Black, non-hispanic, voting age population
-* `AMINVAP`: American Indian and Alaska Native, non-hispanic, voting age population
-* `ASIANVAP`: Asian, non-hispanic, voting age population
-* `NHPIVAP`: Native Hawaiian and Pacific Islander, non-hispanic, voting age population
-* `OTHERVAP`: Other race, non-hispanic, voting age population
-* `2MOREVAP`: Two or more races, non-hispanic, voting age population
-* `CD_12`: 2012 enacted congressional district ID
-* `CD_16`: 2016 enacted congressional district ID
-* `HDIST_11`: 2011 enacted House of Delegates district ID
-* `HDIST_REM`: 2019 remedial House of Delegates district ID
-* `SENDIST`: 2011 enacted state senate district ID
 
-## Projection
-This shapefile uses a NAD83/Virginia Lambert projection or EPSG: 3968.
+- `COUNTYFP20`: County FIPS code
+- 'LOCALITY20': Locality FIPS Code
+- 'PRECINCT': Precinct FIPS code
+- `VTDST': Voting Tabulation District FIPS code
+- `CD`: Congressional district ID in 2021 congressional map, enacted on 2/27/23
+- `SEND`: State Senate district for 2021 State Senate Approved Plan
+- `HDIST`: State House district for 2024 State House Approved Plan
+- `TOTPOP`: Total population in 2020 Census
+- `NH_WHITE`: White, non-hispanic, population in 2020 Census
+- `NH_BLACK`: Black, non-hispanic, population in 2020 Census
+- `NH_AMIN`: American Indian and Alaska Native, non-hispanic, population in 2020 Census
+- `NH_ASIAN`: Asian, non-hispanic, population in 2020 Census
+- `NH_NHPI`: Native Hawaiian and Pacific Islander, non-hispanic, population in 2020 Census
+- `NH_OTHER`: Other race, non-hispanic, population in 2020 Census
+- `NH_2MORE`: Two or more races, non-hispanic, population in 2020 Census
+- `HISP`: Hispanic population in 2020 Census
+- `H_WHITE`: White, hispanic, population in 2020 Census
+- `H_BLACK`: Black, hispanic, population in 2020 Census
+- `H_AMIN`: American Indian and Alaska Native, hispanic, population in 2020 Census
+- `H_ASIAN`: Asian, hispanic, population in 2020 Census
+- `H_NHPI`: Native Hawaiian and Pacific Islander, hispanic, population in 2020 Census
+- `H_OTHER`: Other race, hispanic, population in 2020 Census
+- `H_2MORE`: Two or more races, hispanic, population in 2020 Census
+- `VAP`: Total voting age population in 2020 Census
+- `HVAP`: Hispanic voting age population in 2020 Census
+- `WVAP`: White, non-hispanic, voting age population in 2020 Census
+- `BVAP`: Black, non-hispanic, voting age population in 2020 Census
+- `AMINVAP`: American Indian and Alaska Native, non-hispanic, voting age population in 2020 Census
+- `ASIANVAP`: Asian, non-hispanic, voting age population in 2020 Census
+- `NHPIVAP`: Native Hawaiian and Pacific Islander, non-hispanic, voting age population in 2020 Census
+- `OTHERVAP`: Other race, non-hispanic, voting age population in 2020 Census
+- `2MOREVAP`: Two or more races, non-hispanic, voting age population in 2020 Census
+- `ATG17D`: Number of votes for 2017 Democratic attorney general candidate
+- `ATG17R`: Number of votes for 2017 Republican attorney general candidate
+- `ATG17O`: Number of votes for 2017 other party's attorney general candidate
+- `ATG21D`: Number of votes for 2021 Democratic attorney general candidate
+- `ATG21R`: Number of votes for 2021 Republican attorney general candidate
+- `ATG21O`: Number of votes for 2021 other party's attorney general candidate
+- `GOV17D`: Number of votes for 2017 Democratic gubernatorial candidate
+- `GOV17R`: Number of votes for 2017 Republican gubernatorial candidate
+- `GOV17O`: Number of votes for 2017 other party's gubernatorial candidate
+- `GOV21D`: Number of votes for 2021 Democratic gubernatorial candidate
+- `GOV21R`: Number of votes for 2021 Republican gubernatorial candidate
+- `GOV21O`: Number of votes for 2021 other party's gubernatorial candidate
+- `LTG17D`: Number of votes for 2017 Democratic lieutenant governor candidate
+- `LTG17R`: Number of votes for 2017 Republican lieutenant governor candidate
+- `LTG17O`: Number of votes for 2017 other party's lieutenant governor candidate
+- `LTG21D`: Number of votes for 2021 Democratic lieutenant governor candidate
+- `LTG21R`: Number of votes for 2021 Republican lieutenant governor candidate
+- `LTG21O`: Number of votes for 2021 other party's lieutenant governor candidate
+- `PRE16D`: Number of votes for 2016 Democratic presidential candidate
+- `PRE16R`: Number of votes for 2016 Republican presidential candidate
+- `PRE16O`: Number of votes for 2016 other party's presidential candidate
+- `PRE20D`: Number of votes for 2020 Democratic presidential candidate
+- `PRE20R`: Number of votes for 2020 Republican presidential candidate
+- `PRE20O`: Number of votes for 2020 other party's presidential candidate
+- `USS18D`: Number of votes for 2018 Democratic senate candidate
+- `USS18R`: Number of votes for 2018 Republican senate candidate
+- `USS18O`: Number of votes for 2018 other party's senate candidate
+- `USS20D`: Number of votes for 2020 Democratic senate candidate
+- `USS20R`: Number of votes for 2020 Republican senate candidate
+- `USS20O`: Number of votes for 2020 other party's senate candidate
