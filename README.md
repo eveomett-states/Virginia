@@ -3,7 +3,7 @@ This data was generated using data from the Redistricting Data Hub.  Any use of 
 
 Use of this project is further governed by the terms of the [Creative Commons Attribution Noncommercial 4.0 International](https://creativecommons.org/licenses/by-nc/4.0/legalcode.en)
 
-# Virginia Json and Shapefile
+# Virginia Json
 
 This json and shapeifle were created by Professor Ellen Veomett and her student Ananya Agarwal using the corresponding jupyter notebook.
 
@@ -36,9 +36,9 @@ Data were cleaned and aggregated in the corresponding jupyter notebook using MGG
 ## Metadata
 
 - `COUNTYFP20`: County FIPS code
-- 'LOCALITY20': Locality FIPS Code
-- 'PRECINCT': Precinct FIPS code
-- `VTDST': Voting Tabulation District FIPS code
+- `LOCALITY20`: Locality FIPS Code
+- `PRECINCT`: Precinct FIPS code
+- `VTDST`: Voting Tabulation District FIPS code
 - `CD`: Congressional district ID in 2021 congressional map, enacted on 2/27/23
 - `SEND`: State Senate district for 2021 State Senate Approved Plan
 - `HDIST`: State House district for 2024 State House Approved Plan
