@@ -5,7 +5,7 @@ Use of this project is further governed by the terms of the [Creative Commons At
 
 # Virginia Json
 
-This json and shapeifle were created by Professor Ellen Veomett and her student Ananya Agarwal using the corresponding jupyter notebook.
+This json and shapeifle were created by Professor Ellen Veomett and her student Ananya Agarwal using the corresponding jupyter notebook.  As part of the cleaning process, precincts were nested within counties and small rook adjacencies (under 30.5 m) were changed to queen adjacencies.
 
 # **Sources**
 All data retrieved 04/30/24:
@@ -29,6 +29,8 @@ Obtain the following data from Restricting Data Hub
 [2017 election data](https://redistrictingdatahub.org/dataset/vest-2017-virginia-precinct-boundaries-and-election-results-shapefile/)**:**  VEST 2017 virginia precinct and election results
 
 [2016 election data](https://redistrictingdatahub.org/dataset/vest-2016-virginia-precinct-and-election-results/)**:**  VEST 2016 virginia precinct and election results
+
+[2020 County data](https://redistrictingdatahub.org/dataset/virginia-county-pl-94171-2020/): from 2020 Census Redistricting Data (P.L. 94-171) Shapefiles
 
 ## Processing
 Data were cleaned and aggregated in the corresponding jupyter notebook using MGGG’s python library [maup](https://github.com/mggg/maup).  
